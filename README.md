@@ -1,12 +1,14 @@
 ## My neovim configuration with lua.
 
 ## Look:
-<img src="https://live.staticflickr.com/65535/52873074761_ba52a89004_b.jpg" width="500"/>
-</br>
-<img src="https://live.staticflickr.com/65535/52873514863_fa85203c75_b.jpg" width="500"/>
-</br>
-<img src="https://live.staticflickr.com/65535/52873514868_6d9b7d28a3_b.jpg" width="500"/>
-</br>
+<div style="display: flex; flex-direction:column; align-items:center;">
+    <img src="https://live.staticflickr.com/65535/52873074761_ba52a89004_b.jpg" width="500"/>
+    </br>
+    <img src="https://live.staticflickr.com/65535/52873514863_fa85203c75_b.jpg" width="500"/>
+    </br>
+    <img src="https://live.staticflickr.com/65535/52873514868_6d9b7d28a3_b.jpg" width="500"/>
+    </br>
+</div>
 
 ### Main Plugin List
 
