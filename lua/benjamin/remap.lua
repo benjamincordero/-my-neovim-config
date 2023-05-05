@@ -31,9 +31,12 @@ vim.keymap.set('n', '<TAB>', ':tabnext<CR>')
 vim.keymap.set('n', '<S-TAB>', ':tabprevious<CR>')
 
 vim.keymap.set('n', '<Leader>b', ':NvimTreeToggle<CR>', opts)
-vim.keymap.set('n', '--', '<plug>NERDCommenterToggle', opts)
+vim.keymap.set({ 'n', 'v' }, '--', '<plug>NERDCommenterToggle', opts)
 vim.keymap.set('n', ')', '<Plug>(GitGutterNextHunk)', opts)
 vim.keymap.set('n', '(', '<Plug>(GitGutterPrevHunk)', opts)
+vim.keymap.set('n', '<Leader>tr', ':TransparentToggle<CR>', opts)
+vim.keymap.set('n', '<C-d>', ':Alpha<CR>', opts)
+
 
 g.copilot_no_tab_map = true
 map("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })

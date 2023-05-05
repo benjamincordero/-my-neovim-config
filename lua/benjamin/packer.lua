@@ -21,10 +21,24 @@ return require('packer').startup(function(use)
     'rose-pine/neovim',
     as = 'rose-pine',
     config = function()
-      vim.cmd('colorscheme rose-pine')
+      --vim.cmd('colorscheme rose-pine')
+    end
+  })
+  use({
+    "EdenEast/nightfox.nvim",
+    config = function()
+      --require('nightfox').load()
     end
   })
 
+  use({
+    'nyoom-engineering/oxocarbon.nvim',
+    config = function()
+      vim.opt.background = "dark"
+      vim.cmd.colorscheme('oxocarbon')
+      vim.cmd.colorscheme('carbonfox')
+    end
+  })
   use({
     "folke/trouble.nvim",
     config = function()

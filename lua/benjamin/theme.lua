@@ -3,8 +3,6 @@ vim.cmd("highlight GitGutterAdd guifg=#009900 ctermfg=Green")
 vim.cmd("highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow")
 vim.cmd("highlight GitGutterDelete guifg=#ff2222 ctermfg=Red")
 
-
-
 -- nvim-tree
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
@@ -72,7 +70,7 @@ local colors = {
   black  = '#080808',
   white  = '#c6c6c6',
   red    = '#ff5189',
-  violet = '#ffaa00',
+  violet = '#25be6a',
   grey   = '#303030',
 }
 
