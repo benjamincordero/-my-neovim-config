@@ -4,7 +4,7 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- basic maps
-vim.keymap.set('n', '<F5>', ':so<CR>', opts)
+vim.keymap.set('n', '<F5>', ':so ~/.config/nvim/init.lua<CR>', opts)
 vim.keymap.set('n', '<Leader>q', ':q<CR>')
 vim.keymap.set('n', '<Leader>qq', ':q!<CR>')
 vim.keymap.set('n', '<Leader>w', ':w<CR>')

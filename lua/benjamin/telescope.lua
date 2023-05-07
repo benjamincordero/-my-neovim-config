@@ -20,9 +20,32 @@ require('telescope').setup {
       },
     },
     sorting_strategy = "ascending",
-    --- other configs
   },
 }
+
+-- Telescope highlights
+function ColorMyTelescope()
+  vim.api.nvim_set_hl(0, "TelescopePromptTitle", { bg = "#f090ae", fg = "#1a1b24" })
+  vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { bg = "#DBF227", fg = "#1a1b24" })
+  vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { bg = "#9FC131", fg = "#1a1b24" })
+
+  print("¡Neovim se ha iniciado!")
+end
+
+vim.cmd("autocmd BufReadPost * lua ColorMyTelescope()")
+--vim.api.nvim_set_hl(0, "", { bg = "#", fg = "#" })
+--TelescopeNormal
+--TelescopeBorder
+--TelescopeSelectionCaret
+--TelescopeMatching
+--TelescopePromptNormal
+--TelescopePromptTitle
+--TelescopePromptPrefix
+--TelescopePromptBorder
+--TelescopePreviewTitle
+--TelescopePreviewBorder
+--TelescopeResultsTitle
+--TelescopeResultsBorder
 -- To get fzf loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')

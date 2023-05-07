@@ -172,24 +172,3 @@ require('tabby.tabline').set(function(line)
     hl = theme.fill,
   }
 end)
-
-
-
--- Telescope
-
-vim.api.nvim_set_hl(0, "TelescopePromptTitle", { bg = "#f090ae", fg = "#1a1b24" })
-vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { bg = "#DBF227", fg = "#1a1b24" })
-vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { bg = "#9FC131", fg = "#1a1b24" })
---vim.api.nvim_set_hl(0, "", { bg = "#", fg = "#" })
---TelescopeNormal
---TelescopeBorder
---TelescopeSelectionCaret
---TelescopeMatching
---TelescopePromptNormal
---TelescopePromptTitle
---TelescopePromptPrefix
---TelescopePromptBorder
---TelescopePreviewTitle
---TelescopePreviewBorder
---TelescopeResultsTitle
---TelescopeResultsBorder
