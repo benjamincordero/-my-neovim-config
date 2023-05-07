@@ -68,20 +68,20 @@ local colors = {
   blue   = '#80a0ff',
   cyan   = '#79dac8',
   black  = '#080808',
-  white  = '#c6c6c6',
+  white  = '#f2f2f2',
   red    = '#ff5189',
-  violet = '#25be6a',
+  violet = '#373b43',
   grey   = '#303030',
 }
 
 local bubbles_theme = {
   normal = {
-    a = { fg = colors.black, bg = colors.violet },
+    a = { fg = '#a3a6ac', bg = colors.violet },
     b = { fg = colors.white, bg = colors.grey },
     c = { fg = colors.black, bg = colors.black },
   },
 
-  insert = { a = { fg = colors.black, bg = colors.blue } },
+  insert = { a = { fg = colors.black, bg = colors.cyan } },
   visual = { a = { fg = colors.black, bg = colors.cyan } },
   replace = { a = { fg = colors.black, bg = colors.red } },
 
@@ -172,3 +172,24 @@ require('tabby.tabline').set(function(line)
     hl = theme.fill,
   }
 end)
+
+
+
+-- Telescope
+
+vim.api.nvim_set_hl(0, "TelescopePromptTitle", { bg = "#f090ae", fg = "#1a1b24" })
+vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { bg = "#DBF227", fg = "#1a1b24" })
+vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { bg = "#9FC131", fg = "#1a1b24" })
+--vim.api.nvim_set_hl(0, "", { bg = "#", fg = "#" })
+--TelescopeNormal
+--TelescopeBorder
+--TelescopeSelectionCaret
+--TelescopeMatching
+--TelescopePromptNormal
+--TelescopePromptTitle
+--TelescopePromptPrefix
+--TelescopePromptBorder
+--TelescopePreviewTitle
+--TelescopePreviewBorder
+--TelescopeResultsTitle
+--TelescopeResultsBorder

@@ -106,4 +106,5 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   })
   use('nanozuki/tabby.nvim')
+  use('brenoprata10/nvim-highlight-colors')
 end)

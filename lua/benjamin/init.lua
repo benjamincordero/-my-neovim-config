@@ -7,6 +7,7 @@ require("benjamin.lsp")
 require("benjamin.theme")
 require("benjamin.harpoon")
 require("benjamin.undotree")
+require("benjamin.highlight_colors")
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
