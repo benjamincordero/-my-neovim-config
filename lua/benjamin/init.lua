@@ -20,7 +20,9 @@ end
 
 local dashboard = require("alpha.themes.dashboard")
 
+
 dashboard.section.header.val = {
+  [[                     Think twice, code once                     ]],
   [[                                                     ░█         ]],
   [[                                                     █░         ]],
   [[                                                                ]],
@@ -42,10 +44,17 @@ dashboard.section.buttons.val = {
   dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
-local function footer()
-  return "Think twice, code once."
-end
 
+local date_gen = io.popen('echo "$(date +%d)/$(date +%m)/$(date +%Y)($(date +%A))$(date +%X)" | tr -d "\n"')
+local date = date_gen:read("*all")
+date_gen:close()
+
+local function footer()
+  --return date;
+  local horatexto = date
+
+  return horatexto
+end
 dashboard.section.footer.val = footer()
 
 dashboard.section.footer.opts.hl = "Type"
