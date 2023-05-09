@@ -22,7 +22,6 @@ local dashboard = require("alpha.themes.dashboard")
 
 
 dashboard.section.header.val = {
-  [[                     Think twice, code once                     ]],
   [[                                                     ░█         ]],
   [[                                                     █░         ]],
   [[                                                                ]],
@@ -32,7 +31,7 @@ dashboard.section.header.val = {
   [[██╔══██╗██╔══╝░░██║╚████║██╗░░██║██╔══██║██║╚██╔╝██║██║██║╚████║]],
   [[██████╦╝███████╗██║░╚███║╚█████╔╝██║░░██║██║░╚═╝░██║██║██║░╚███║]],
   [[╚═════╝░╚══════╝╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝╚═╝░░╚══╝]],
-
+  [[                     Think twice, code once                     ]],
 }
 
 dashboard.section.buttons.val = {
