@@ -28,8 +28,6 @@ function ColorMyTelescope()
   vim.api.nvim_set_hl(0, "TelescopePromptTitle", { bg = "#f090ae", fg = "#1a1b24" })
   vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { bg = "#DBF227", fg = "#1a1b24" })
   vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { bg = "#9FC131", fg = "#1a1b24" })
-
-  print("¡Neovim se ha iniciado!")
 end
 
 vim.cmd("autocmd BufReadPost * lua ColorMyTelescope()")

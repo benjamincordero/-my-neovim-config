@@ -38,13 +38,14 @@ vim.keymap.set('n', '<Leader>5', ':tabn5<CR>', opts)
 vim.keymap.set('n', '<Leader>6', ':tabn6<CR>', opts)
 -- You can put more here, many as you need them
 
-vim.keymap.set('n', '<Leader>b', ':NvimTreeToggle<CR>', opts)
+vim.keymap.set('n', '<Leader>b', ':NvimTreeFindFileToggle<CR>', opts)
 vim.keymap.set({ 'n', 'v' }, '--', '<plug>NERDCommenterToggle', opts)
 vim.keymap.set('n', ')', '<Plug>(GitGutterNextHunk)', opts)
 vim.keymap.set('n', '(', '<Plug>(GitGutterPrevHunk)', opts)
 vim.keymap.set('n', '<Leader>tr', ':TransparentToggle<CR>', opts)
 vim.keymap.set('n', '<C-d>', ':Alpha<CR>', opts)
 
+vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', { noremap = true })
 -- Copilot
 g.copilot_no_tab_map = true
 map("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
