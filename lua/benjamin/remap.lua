@@ -45,7 +45,6 @@ vim.keymap.set('n', '(', '<Plug>(GitGutterPrevHunk)', opts)
 vim.keymap.set('n', '<Leader>tr', ':TransparentToggle<CR>', opts)
 vim.keymap.set('n', '<C-d>', ':Alpha<CR>', opts)
 
-vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', { noremap = true })
 -- Copilot
 g.copilot_no_tab_map = true
 map("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })

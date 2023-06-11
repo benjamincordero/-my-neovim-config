@@ -60,7 +60,6 @@ return require('packer').startup(function(use)
   use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
   use("theprimeagen/refactoring.nvim")
-  use("mbbill/undotree")
   use("tpope/vim-fugitive")
   use("nvim-treesitter/nvim-treesitter-context");
 
@@ -98,6 +97,7 @@ return require('packer').startup(function(use)
   use("nvim-tree/nvim-tree.lua")
   use("nvim-tree/nvim-web-devicons")
   use("christoomey/vim-tmux-navigator")
+  use("jwalton512/vim-blade")
   use("onecentlin/laravel-blade-snippets-vscode")
   use("onecentlin/laravel5-snippets-vscode")
   use("preservim/nerdcommenter")
@@ -105,7 +105,7 @@ return require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   })
-  use('nanozuki/tabby.nvim')
+  --use('nanozuki/tabby.nvim')
   use('brenoprata10/nvim-highlight-colors')
   use({
     "kylechui/nvim-surround",
@@ -116,10 +116,4 @@ return require('packer').startup(function(use)
       })
     end
   })
-  use {
-    'VonHeikemen/fine-cmdline.nvim',
-    requires = {
-      { 'MunifTanjim/nui.nvim' }
-    }
-  }
 end)
