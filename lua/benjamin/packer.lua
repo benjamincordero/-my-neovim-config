@@ -30,7 +30,7 @@ return require('packer').startup(function(use)
       --require('nightfox').load()
     end
   })
-
+  use  'onsails/lspkind.nvim'
   use({
     'nyoom-engineering/oxocarbon.nvim',
     config = function()

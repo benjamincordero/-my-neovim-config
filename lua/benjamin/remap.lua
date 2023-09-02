@@ -16,7 +16,9 @@ vim.keymap.set('n', '<Leader>j', ':vsplit<CR>', opts)
 vim.keymap.set('n', '<Leader>h', ':split<CR>', opts)
 
 -- Terminal
-vim.keymap.set({ 'n', 'v' }, '<C-t>', ':split<CR>:ter<CR>:resize 15<CR>')
+vim.keymap.set({ 'n', 'v' }, '<C-t>', ':split<CR>:ter<CR>:resize 15 ++startinsert<CR>')
+vim.keymap.set('t', '<ESC>', '<C-\\><C-n>:q<CR>', opts)
+
 
 -- Size windows
 vim.keymap.set('n', '<Leader>>', '10<C-w>>', opts)
